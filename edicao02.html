@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIÇÕES PRÊMIOS DO THIAGO</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="tiago.html"><img src="imagens/logo.PNG" alt="Logo Premiações" class="logo"></a>
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                &#9776; </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="hero">
+            <div>
+                <img src="imagens/2.png" alt="capa" class="hero-image">
+            </div>
+            <p class="hero-description">CONFIRA AQUI OS GANHADORES DAS ÚLTIMAS EDIÇÕES 🍀💰</p>
+            <a href="https://premiosdothiago.com/campanhas" button class="green-button">  PARTICIPE! ☘️</button></a>
+        </section>
+<!---------------------------- BOTAO ------------------------------------->
+    <div class="custom-dropdown"> 
+  <button class="dropdown-toggle" id="dropdownButton">
+    EDIÇÕES PRÊMIOS DO THIAGO <span class="arrow">&#9660;</span>
+  </button>
+  <ul class="dropdown-menu" id="dropdownMenu">
+    <li data-value="edicao011"><a href="edicao13.html">Prêmio: 2x R$ 5.000,00 💰</a></li>
+    <li data-value="edicao011"><a href="edicao12.html">Prêmio: FAN 160 | OKM 💰</a></li>
+    <li data-value="edicao011"><a href="edicao11.html">Prêmio: R$ 5.000,00 💰</a></li>
+    <li data-value="edicao10"><a href="edicao10.html">Prêmio: R$ 1.000,00 💰</a></li>
+    <li data-value="edicao08"><a href="edicao08.html">Prêmio: CB 300F TWISTER | OKM 💰</a></li>
+    <li data-value="edicao07"><a href="edicao07.html">Prêmio: R$ 1.420,00 💰</a></li>
+    <li data-value="edicao06"><a href="edicao06.html">Prêmio: R$ 4.000,00 💰</a></li>
+    <li data-value="edicao05"><a href="edicao05.html">Prêmio: 2x R$ 1.420,00 💰</a></li>
+    <li data-value="edicao04"><a href="edicao04.html">Prêmio: R$ 1.420,00 💰</a></li>
+    <li data-value="edicao03"><a href="edicao03.html">Prêmio: R$ 4.000,00 💰</a></li>
+    <li data-value="edicao02"> <a href="edicao02.html">Prêmio: 2x IPHONE 15 PRO MAX 💰</a></li>
+    <li data-value="edicao01"> <a href="edicao01.html">Prêmio: R$ 4.000,00 💰</a></li>
+    </ul>
+</div>
+<!---------------------------- INICIO BOTAO ------------------------------------->
+<script> 
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+  const dropdownItems = dropdownMenu.querySelectorAll('li');
+
+  dropdownButton.addEventListener('click', function() {
+    dropdownMenu.classList.toggle('show');
+  });
+
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', function() {
+      const selectedValue = this.dataset.value;
+      const selectedText = this.textContent;
+      dropdownButton.innerHTML = selectedText + ' <span class="arrow">&#9660;</span>'; // Update button text
+      dropdownMenu.classList.remove('show'); // Hide dropdown
+      console.log("Selected Value:", selectedValue);
+      console.log("Selected Text:", selectedText);
+      // Add further logic here for what happens when an item is selected
+    });
+  });
+
+  // Close the dropdown if the user clicks outside of it
+  window.addEventListener('click', function(event) {
+    if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-menu') && !event.target.closest('.dropdown-menu')) {
+      if (dropdownMenu.classList.contains('show')) {
+        dropdownMenu.classList.remove('show');
+      }
+    }
+  });
+</script>
+<!---------------------------- FIM BOTAO ------------------------------------->
+
+<!---------------------------- INICIO 1------------------------------------->
+<section class="instant-prizes">
+<div class="prize-card">
+<p class="prize-type">PRÊMIO INSTANTÂNEO</p>
+<h3 class="prize-name">Prêmio: 2 IPHONE 15 PRO MAX ou R$ 10.000,00 💰</h3>
+<p class="prize-info">Data da premiação: 09/06/2024</p>
+<p class="prize-info">Ganhador(a): Carla Chavernuê</p>
+
+<!---------------------------- INICIO VIDEO 1 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 1 ------------------------------------->
+
+<!---------------------------- INICIO 2 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Heloiza Campos</p>
+
+<!---------------------------- INICIO VIDEO 2 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 2 ------------------------------------->
+
+<!---------------------------- INICIO 3 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Alessandro Ciribeli</p>
+
+<!---------------------------- INICIO VIDEO 3 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 3 ------------------------------------->
+
+<!---------------------------- INICIO 4 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Fabiano Oliveira</p>
+
+<!---------------------------- INICIO VIDEO 4 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.5.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 4 ------------------------------------->
+
+<!---------------------------- INICIO 5 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO & TOP COMPRADOR</p>
+<h3 class="prize-name">Prêmio: R$ 800,00 💰</h3>
+<p class="prize-info">Ganhador(a): Vitor Milane</p>
+
+<!---------------------------- INICIO VIDEO 5 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.6.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 5 ------------------------------------->
+
+<!---------------------------- INICIO 6 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Honorina Silva</p>
+
+<!---------------------------- INICIO VIDEO 6 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.7.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 6 ------------------------------------->
+
+<!---------------------------- INICIO 7 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Talita Rangel</p>
+
+<!---------------------------- INICIO VIDEO 7 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.8.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 7 ------------------------------------->
+
+<!---------------------------- INICIO 8 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Joana Luz</p>
+
+<!---------------------------- INICIO VIDEO 8 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.9.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 8 ------------------------------------->
+
+<!---------------------------- INICIO 9 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Rodrigo Faustino</p>
+
+<!---------------------------- INICIO VIDEO 9 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.10.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 9 ------------------------------------->
+
+<!---------------------------- INICIO 10 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Fabiana Pedrosa</p>
+
+<!---------------------------- INICIO VIDEO 10 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.11.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 10 ------------------------------------->
+
+<!---------------------------- INICIO 11 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Vitoria Sobrinho</p>
+
+<!---------------------------- INICIO VIDEO 11 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.12.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 11 ------------------------------------->
+
+<!---------------------------- INICIO 12 ------------------------------------->
+<div class="prize-card">
+<p class="prize-type">BILHETE PREMIADO</p>
+<h3 class="prize-name">Prêmio: R$ 300,00 💰</h3>
+<p class="prize-info">Ganhador(a): Ana Domingos</p>
+
+<!---------------------------- INICIO VIDEO 12 ------------------------------------->
+<section class="video-section">
+    <div class="container">
+        <H5>VIDEO DO GANHADOR</H5>
+        <div class="custom-video-player">
+            <video controls preload="metadata" poster="path/to/your/video-poster.jpg">
+                <source src="videos 2/2.13.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+</div>
+<!---------------------------- FIM VIDEO 12 ------------------------------------->
+
+
+
+
+
+</main>
+<script src="script.js"></script>    
+</body>
+</html>
