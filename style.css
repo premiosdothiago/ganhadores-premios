@@ -1,0 +1,288 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /* Remove qualquer tipo de decoração de texto (sublinhado, linha superior, etc.) */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Cor de fundo escura similar à imagem */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px; /* Para telas maiores */
+}
+
+/* Header */
+.header {
+    background-color: #000000;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px; /* Ajuste o tamanho do logo */
+    height: auto;
+}
+
+
+
+/* Em uma aplicação real, você teria um menu de navegação que seria exibido/ocultado por JavaScript */
+/* .nav-menu { display: none; } */
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero-image {
+    width: 450px;
+}
+
+
+
+
+
+.hero-description {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Cor amarela para destaque */
+    padding: 0 10px; /* Pequeno padding para texto */
+}
+
+.raffle-date {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Instant Prizes Section */
+.instant-prizes {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column; /* Coloca os cards um abaixo do outro em mobile */
+    gap: 20px; /* Espaço entre os cards */
+    align-items: center; /* Centraliza os cards */
+}
+
+.prize-card {
+    background-color: #000000; /* Cor de fundo dos cards */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 90%; /* Ocupa 90% da largura em mobile */
+    max-width: 400px; /* Limita a largura máxima dos cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prize-type {
+    font-size: 0.9em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.prize-name {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.prize-info {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+
+
+/* Media Queries para Responsividade */
+.menu-toggle {
+        display: none;
+    }
+/* Para tablets e telas maiores (min-width: 768px) */
+@media (min-width: 768px) {
+    .header .container {
+        justify-content: space-between;
+    }
+
+
+    /* Exemplo: Se você tivesse um menu de navegação, ele apareceria aqui */
+    /* .nav-menu { display: flex; } */
+
+    .instant-prizes {
+        flex-direction: row; /* Coloca os cards lado a lado em telas maiores */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+        justify-content: center; /* Centraliza os cards */
+    }
+
+    .prize-card {
+        width: 45%; /* Ocupa cerca de metade da largura para dois cards por linha */
+        max-width: 350px; /* Mantém um tamanho razoável */
+    }
+}
+
+/* Para desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .hero-image-container {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .instant-prizes {
+        gap: 30px; /* Mais espaço entre os cards em desktops */
+    }
+
+    .prize-card {
+        width: 30%; /* Ocupa cerca de um terço da largura para três cards por linha */
+    }
+}
+
+
+    .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    left: 50%; /* Move its left edge to the horizontal center of the parent */
+  transform: translateX(-50%); /* Move it back by half of its own width */
+  }
+
+  .dropdown-toggle {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+  }
+
+  .dropdown-menu {
+    display: none; /* Hidden by default */
+    background-color: #fff;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  
+
+  .dropdown-menu li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-menu li:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .arrow {
+    margin-left: 10px;
+  }
+
+
+  /* video */
+
+.video-section {
+    padding: 0px 0;
+    text-align: center; 
+    background-color: #000000;
+}
+
+.video-section h2 {
+    color: #ffcc00;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.custom-video-player {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #a8a8a8;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    
+}
+
+.custom-video-player video {
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras abaixo da imagem/vídeo */
+    border-radius: 8px; /* Bordas arredondadas (se quiser que o vídeo em si tenha, não apenas o container) */
+
+    
+}
+
+.video-section p {
+    margin-top: 25px;
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+
+
+/* Estilos para o botão verde */
+.green-button {
+    background-color: #4CAF50; /* Cor de fundo do botão: um tom de verde */
+    color: white; /* Cor do texto do botão */
+    padding: 15px 30px; /* Espaçamento interno: 15px em cima/baixo, 30px nas laterais */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    font-size: 1.2em; /* Tamanho da fonte do texto do botão */
+    cursor: pointer; /* Altera o cursor para uma "mãozinha" ao passar sobre o botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave para dar profundidade ao botão */
+    
+   
+}
+
+/* Estilo para quando o mouse passa sobre o botão */
+.green-button:hover {
+    background-color: #ece363; /* Um verde um pouco mais escuro */
+    transform: translateY(-2px); /* Move o botão ligeiramente para cima (efeito de "levantar") */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para simular maior profundidade */
+    
+}
+
+
